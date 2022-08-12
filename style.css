@@ -2,7 +2,7 @@
 .container{
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.5) url('image/background2.jpg');
+    background: rgba(0, 0, 0, 0.5) url('background2.jpg');
     background-size: cover;
     background-blend-mode: darken;
     display: flex;
@@ -48,7 +48,7 @@
     width: 10rem;
     border-radius: 50%;
     border: 4px solid yellow;
-    background-image: url(image/logo.svg);
+    background-image: url(logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
