@@ -1,44 +1,49 @@
+
 window.onload=function(){
-    // make a perfect
-    var btnc = document.getElementById('btn-c');
-    btnc.addEventListener('click', function(){
-        console.log("clicked");
-        document.location.href = '/contact.html';
-    });
    // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var callBackBtn = document.getElementById("call-back");
+var NavCallBack = document.getElementById("nav-call");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
-callBackBtn.onclick = function() {
-  modal.style.display = "block";
+if(callBackBtn){
+  callBackBtn.onclick = function() {
+    modal.style.display = "block";
+  }
 }
+
+ 
+  NavCallBack.onclick = function() {
+    modal.style.display = "block";
+  }
+
+
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+
+  span[0].onclick = function() {
+    modal.style.display = "none";
+  }
+ 
+
+  
+
+
 
 // When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-//announcement section
-var annIcon = document.querySelector(".ann-icon i");
-setInterval(function(){
-    annIcon.classList.add("ani-icon");
-    setTimeout(function(){
-        annIcon.classList.remove("ani-icon");
-    },250);
-}, 500);
+
 }
 
 // var btns = document.getElementById('btn-s');
